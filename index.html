@@ -3,35 +3,19 @@
 <script type="text/turtle">
     @prefix example: <https://example.org/> .
     @prefix schema: <http://schema.org/> .
+    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
     
     <http://domenique.github.io/#me>
         a schema:Person ;
         schema:name "Doménique Tilleuil" ;
         schema:children ("Loïc" "Axelle") ;
         schema:email "domenique.tilleuil@athumi.eu" ;
+        foaf:knows <https://lurivasm.github.io/rdf-data/me.ttl> ,
+               <https://janvanrensbergen.github.io/#me> ,
+               <https://raw.githubusercontent.com/Thib-G/linked-data-ugent/refs/heads/main/2024-10-03/exercise1.1/me.ttl>
+               <https://pietercolpaert.be/#me> ;
         example:participant <https://pietercolpaert.be/teaching/lds/#2024-2025> .
-</script>
-
-<script type="application/ld+json">
-  {
-    "@context": {
-      "@vocab": "http://schema.org/",
-      "participant": {
-        "@id": "https://example.org/participant",
-        "@type": "@id"
-      }
-    },
-    "@id": "https://janvanrensbergen.github.io/#me",
-    "@type": "Person",
-    "name": "Doménique Tilleuil",
-    "children": ["Loïc", "Axelle"],
-    "email": "domenique.tilleuil@athumi.eu",
-    "about": "foo",
-    "participant": {
-      "@id": "https://pietercolpaert.be/teaching/lds/#2024-2025"
-    }
-  }
-</script>  
+</script> 
 </head>
 <body>
 <h1>Hello</h1>
