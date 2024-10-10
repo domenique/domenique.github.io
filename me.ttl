@@ -5,6 +5,5 @@
     a schema:Person ;
     schema:name "Doménique Tilleuil" ;
     schema:children ("Loïc" "Axelle") ;
-    schema:address <https://data.vlaanderen.be/id/adres/1746557> ;
     schema:email "domenique.tilleuil@athumi.eu" ;
     example:participant <https://pietercolpaert.be/teaching/lds/#2024-2025> .
